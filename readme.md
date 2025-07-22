@@ -77,7 +77,7 @@ async def example_usage():
 
             result = await llm.generate_str(
                 # 这里的Prompt按你自己的改
-                message="""then find the mean length of the column smiles.
+                message="""then rename all columns' name to lower case. then find the mean length of the column smiles if any.
                 output as
                 filename: smiles_mean_length"""
             )
