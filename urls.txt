@@ -1,0 +1,8 @@
+# pandas mcp server
+https://github.com/marlonluo2018/pandas-mcp-server.git
+
+# filesystem mcp server
+https://github.com/ad/mcp-filesystem.git
+
+# an app framework for agent rapid development to connect mcp server
+https://github.com/lastmile-ai/mcp-agent

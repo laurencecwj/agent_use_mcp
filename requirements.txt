@@ -1,0 +1,3 @@
+mcp-agent
+pandas
+openpyxl

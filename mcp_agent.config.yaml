@@ -1,0 +1,22 @@
+execution_engine: asyncio
+logger:
+  transports: [console, file]
+  level: debug
+  show_progress: true
+  path_settings:
+    path_pattern: "logs/mcp-agent-{unique_id}.jsonl"
+    unique_id: "timestamp" # Options: "timestamp" or "session_id"
+    timestamp_format: "%Y%m%d_%H%M%S"
+
+mcp:
+  servers:
+    filesystem:
+      transport: streamable_http
+      url: http://localhost:8989/mcp
+    pandas:
+      transport: sse
+      url: http://localhost:8000/sse
+        #openai:
+        #deepseek-ai/DeepSeek-R1-0528-Turbo
+google:
+  default_model: gemini-2.5-flash-lite-preview-06-17
