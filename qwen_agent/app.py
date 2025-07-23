@@ -47,29 +47,13 @@ tools = [
 
 
 # Step 2: Configure the LLM you are using.
-llm_cfg = {
-    # Use the model service provided by DashScope:
-    'model': 'gemini-2.5-flash-lite-preview-06-17', #'qwen-max-latest',
-    # 'model_type': 'qwen_dashscope',
-    'api_key': 'AIzaSyAz11E7O-WMXY3BDLieq47jPxBPTScTS54',
-    'model_server': 'https://generativelanguage.googleapis.com/v1beta/openai/',
-    # It will use the `DASHSCOPE_API_KEY' environment variable if 'api_key' is not set here.
-
-    # Use a model service compatible with the OpenAI API, such as vLLM or Ollama:
-    # 'model': 'Qwen2.5-7B-Instruct',
-    # 'model_server': 'http://localhost:8000/v1',  # base_url, also known as api_base
-    # 'api_key': 'EMPTY',
-
-    # (Optional) LLM hyperparameters for generation:
-    'generate_cfg': {
-        'top_p': 0.8
-    }
-}
-
 llm_config = {
     "model": "qwen3:8b",
     "model_server": "http://localhost:11434/v1/",
     "api_key": "ollama",
+    'generate_cfg': {
+        'top_p': 0.8
+    }
 }
 
 # Step 3: Create an agent. Here we use the `Assistant` agent as an example, which is capable of using tools and reading files.
