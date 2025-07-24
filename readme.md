@@ -145,7 +145,7 @@ The directory '/data2/working/pandas-mcp-server/data' contains the following Exc
 * test_96cpds.xlsx
 
 /data2/working/pandas-mcp-server/data/test_96cpds.xlsx: 20.541666666666668
-/data2/working/pandas-mcp-server/data/chembl.xlsx: 49.23125996810207
+/data2/working/pandas-mcp-server/data/chembl.xlsx: 63.76939203354298 # 注意这里有时结果不对的，要核对
 ```
 
 
